@@ -1,34 +1,24 @@
 pipeline {
     agent any
     stages {
-        stage("Clean Up"){
+        stage("Barfi"){
             steps {
                 deleteDir()
             }
         }
-        stage("Clone Repo"){
+        stage("Jalebi"){
             steps {
                 sh "git clone https://github.com/jenkins-docs/simple-java-maven-app.git"
             }
         }
-        stage("Build"){
+        stage("Samosa"){
             steps {
-                dir("simple-java-maven-app") 
+                dir("simple-java-maven-app") {echo 'brew install maven'}
             }
         }
-        stage("Kardo"){    
-            steps{
-                echo 'brew install maven'
-            }
-        }
-        stage("Test"){
+        stage("Pakoda"){
             steps {
-                dir("simple-java-maven-app")
-            }
-        }
-        stage("Masoom"){
-            steps{
-                echo 'maven -version'
+                dir("simple-java-maven-app"){echo 'maven -version'}
             }
         }
     }
