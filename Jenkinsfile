@@ -18,7 +18,7 @@ pipeline {
         }
         stage("Kardo"){    
             steps{
-                brew install maven
+                echo 'brew install maven'
             }
         }
         stage("Test"){
@@ -28,7 +28,7 @@ pipeline {
         }
         stage("Masoom"){
             steps{
-                maven -version
+                echo 'maven -version'
             }
         }
     }
