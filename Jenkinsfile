@@ -13,12 +13,12 @@ pipeline {
         }
         stage("Samosa"){
             steps {
-                dir("simple-java-maven-app") {sh 'echo "brew install maven" '}
+                dir("simple-java-maven-app") {sh 'brew install maven'}
             }
         }
         stage("Pakoda"){
             steps {
-                dir("simple-java-maven-app"){sh 'echo "maven -version" '}
+                dir("simple-java-maven-app"){sh 'maven -version'}
             }
         }
     }
