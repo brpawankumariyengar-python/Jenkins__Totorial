@@ -21,7 +21,7 @@ pipeline {
         stage("Test"){
             steps {
                 dir("simple-java-maven-app") {
-                    mvn -version
+                    echo 'hola dola te bola'
                 }
             }
         }
