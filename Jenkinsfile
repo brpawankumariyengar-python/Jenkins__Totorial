@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Pakoda"){
             steps {
-                dir("simple-java-maven-app"){sh 'maven -version'}
+                dir("simple-java-maven-app"){sh 'mvn -v'}
             }
         }
     }
