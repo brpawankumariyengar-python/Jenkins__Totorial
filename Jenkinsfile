@@ -15,6 +15,8 @@ pipeline {
             steps {
                 dir("simple-java-maven-app") 
             }
+        }
+        stage("Kardo"){    
             steps{
                 brew install maven
             }
@@ -23,6 +25,8 @@ pipeline {
             steps {
                 dir("simple-java-maven-app")
             }
+        }
+        stage("Masoom"){
             steps{
                 maven -version
             }
