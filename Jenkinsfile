@@ -13,16 +13,18 @@ pipeline {
         }
         stage("Build"){
             steps {
-                dir("simple-java-maven-app") {
-                    brew install maven
-                }
+                dir("simple-java-maven-app") 
+            }
+            steps{
+                brew install maven
             }
         }
         stage("Test"){
             steps {
-                dir("simple-java-maven-app") {
-                    echo 'hola dola te bola'
-                }
+                dir("simple-java-maven-app")
+            }
+            steps{
+                maven -version
             }
         }
     }
