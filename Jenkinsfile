@@ -11,14 +11,9 @@ pipeline {
                 sh "git clone https://github.com/jenkins-docs/simple-java-maven-app.git"
             }
         }
-        stage("Samosa"){
-            steps {
-                dir("simple-java-maven-app") {z 'brew install maven'}
-            }
-        }
         stage("Pakoda"){
             steps {
-                dir("simple-java-maven-app"){z 'maven -version'}
+                dir("simple-java-maven-app"){'maven -version'}
             }
         }
     }
