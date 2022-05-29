@@ -2,7 +2,8 @@
 pipeline{
     agent {label 'Computer'}
     parameters{
-        string(defaultValue: "Gogo gaga nana mama", description: 'Please Enter Text here', name: 'userFlag')
+        string(defaultValue: "Hindu", description: 'What religion?', name: 'userFlag')
+        choice(choices: ['Hindu', 'Muslim', 'Buddhist', 'Christian', 'Sikh'], description: 'What religion do you belong to?', name: 'religion')
         }
     stages{
 
