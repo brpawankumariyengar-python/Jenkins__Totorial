@@ -16,5 +16,10 @@ pipeline {
                     echo "Hona tha  .... Ho Gaya"
                    }
             }
+        stage("Khalaas"){
+            steps {
+                    sh "pwd"
+                   }
+            }
     }
 }
