@@ -8,7 +8,7 @@ pipeline{
 
         stage('First'){
                 steps{
-                    sh "mkdir GayMayNayPay"
+                    sh "mkdir ${params.userFlag}"
                     }
         }
         stage('Second'){
