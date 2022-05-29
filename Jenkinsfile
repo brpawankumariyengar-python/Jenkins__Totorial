@@ -8,7 +8,7 @@ pipeline{
 
         stage('First'){
                 steps{
-                    echo 'First First First'
+                    sh "mkdir ${param.userFlag}"
                     }
         }
         stage('Second'){
