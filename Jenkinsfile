@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("Barfi"){
             steps {
-                deleteDir()
+                writeFile(file: "filename.txt", text: "Hule Hulare Hule Hule Hule")
             }
         }
         stage("Jalebi"){
@@ -13,8 +13,7 @@ pipeline {
         }
         stage("Pakoda"){
             steps {
-                dir("simple-java-maven-app"){sh 'mvn -v'}
-                dir("simple-java-maven-app"){'mvn -v'}
+                    echo "Hona tha  .... Ho Gaya"
+                   }
             }
-        }
     }
