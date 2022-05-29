@@ -8,7 +8,7 @@ pipeline {
         }
         stage("Jalebi"){
             steps {
-                sh "git clone https://github.com/jenkins-docs/simple-java-maven-app.git"
+                sh "mkdir momomomo"
             }
         }
         stage("Pakoda"){
