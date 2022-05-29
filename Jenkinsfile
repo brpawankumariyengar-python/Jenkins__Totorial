@@ -1,20 +1,30 @@
 pipeline {
     agent any
     stages {
-        stage("Barfi"){
+        stage("Stage 1"){
             steps {
-                deleteDir()
+                echo "This is stage 1"
             }
         }
-        stage("Jalebi"){
+        stage("Stage 2"){
             steps {
-                sh "git clone https://github.com/jenkins-docs/simple-java-maven-app.git"
+                echo "This is stage 2"
             }
         }
-        stage("Pakoda"){
+        stage("Stage 3"){
             steps {
-                dir("simple-java-maven-app"){'mvn -v'}
+                echo "This is stage 3"
+                }
+            }
+        stage("Stage 4"){
+            steps {
+                echo "This is stage 4"
+                }
+            }
+        stage("Stage 5"){
+            steps {
+                echo "This is stage 5"
+                    }
             }
         }
     }
-}
