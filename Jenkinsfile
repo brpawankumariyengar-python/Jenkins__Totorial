@@ -2,7 +2,7 @@
 pipeline{
 	agent {label 'Computer'}
 	parameters{
-		booleanParam(defaultValue: true, description: 'True or False', name: 'pawanBoolean')
+		booleanParam(defaultValue: false, description: 'True or False', name: 'pawanBoolean')
 		}
 	stages{
 
