@@ -13,7 +13,7 @@ pipeline{
         }
         stage('Second'){
                 steps{
-                    writeFile(file: "filename.txt", text: "${params.userFlag}", encoding: "UTF-8")
+                    writeFile(file: "filename.txt", text: "${params.userFlag}")
                     }
         }
         stage('Third'){
