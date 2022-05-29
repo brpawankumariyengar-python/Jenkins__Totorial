@@ -18,7 +18,7 @@ pipeline {
             }
         stage("Stage 4"){
             steps {
-                echo "This is stage 4"
+                sh "mkdir Tota"
                 }
             }
         stage("Stage 5"){
