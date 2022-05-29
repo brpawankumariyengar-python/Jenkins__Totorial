@@ -23,7 +23,7 @@ pipeline {
             }
         stage("Stage 5"){
             steps {
-                echo "This is stage 5"
+                sh "python3 --version"
                     }
         }
         stage("Stage Final"){
