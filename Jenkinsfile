@@ -1,6 +1,9 @@
 // Declarative //
 pipeline{
 	agent {label 'Computer'}
+	parameters{
+		booleanParam(defaultValue: true, description: 'True or False', name: 'pawanBoolean')
+		}
 	stages{
 
 		stage('First'){
@@ -18,7 +21,11 @@ pipeline{
 				sh "pwd"
 				}
 		}
-
+		stage('Chamatkar'){
+			steps{
+				echo "The parameter we decided upon is as: ${params.pawanBoolean}"
+				}
+		}
 	}
 
 }
