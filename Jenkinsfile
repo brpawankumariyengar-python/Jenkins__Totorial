@@ -25,6 +25,11 @@ pipeline {
             steps {
                 echo "This is stage 5"
                     }
+        }
+        stage("Stage Final"){
+            steps {
+                echo "This is the Last and Final Stage"
+                    }
             }
         }
     }
