@@ -2,7 +2,7 @@
 pipeline{
     agent {label 'Computer'}
     parameters{
-        string(defaultValue: "Why? Why? Why?", description: '', name: 'userFlag')
+        string(defaultValue: "Gogo gaga nana mama", description: 'Please Enter Text here', name: 'userFlag')
         }
     stages{
 
