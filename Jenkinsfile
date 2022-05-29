@@ -28,7 +28,7 @@ pipeline {
         }
         stage("Stage Final"){
             steps {
-                echo "This is the Last and Final Stage"
+                sh "pwd"
                     }
             }
         }
