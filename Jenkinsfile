@@ -15,7 +15,7 @@ pipeline{
 		}
 		stage('Third'){
 			steps{
-				echo 'Third Third Third'
+				sh "pwd"
 				}
 		}
 
