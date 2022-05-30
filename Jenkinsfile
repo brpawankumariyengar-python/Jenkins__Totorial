@@ -4,7 +4,7 @@ pipeline{
     parameters{
         string(defaultValue: "Lankapati__Ravan", description: 'Please enter your Deployment Name', name: 'deploymentName')
         choice(choices:["EU-WEST-2A","EU-WEST-2B","EU-WEST-2C"], description: "Enter the region you want to deploy to", name: 'deployRegion')
-        boolean(defaultValue: false, description: "Do you want to deploy???", name: 'deployDecision')
+        booleanParam(defaultValue: false, description: "Do you want to deploy???", name: 'deployDecision')
         }
     stages{
 
