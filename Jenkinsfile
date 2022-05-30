@@ -18,7 +18,7 @@ pipeline{
                     echo "The deployment region  you selected is as   : ${params.deployRegion}"
                     }
         }
-        stage('Chamatkar'){
+        stage('Display__Deployment__Decision'){
             steps{
                 echo "The deployment decision you made is as   : ${params.deployDecision}"
                 }
