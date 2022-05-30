@@ -11,13 +11,8 @@ pipeline{
         stage('Show__Variable__Values'){
                 steps{
                     echo "Pawan String Value is  : ${Pawan__String}"
-                    echo "Pawan String Value is  : ${Pawan__String}"
-                    echo "Pawan String Value is  : ${Pawan__String}"
-                    }
-        }
-        stage('Display__Deployment__Region'){
-                steps{
-                    echo "The deployment region  you selected is as   : ${params.deployRegion}"
+                    echo "Pawan Number Value is  : ${Pawan__Number}"
+                    echo "Pawan Boolean Value is  : ${Pawan__Boolean}"
                     }
         }
         stage('Completeion__Celebration'){
