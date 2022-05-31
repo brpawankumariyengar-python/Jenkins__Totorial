@@ -9,7 +9,7 @@ pipeline{
         stage('Show__Variable__Values'){
                 steps{
                     echo " The  Value is as:   ${deploymentName}"
-                        //Pawan__Function("${deploymentName}")
+                    Pawan__Function(" ${deploymentName} ")
                     }
         }
         stage('Completeion__Celebration'){
