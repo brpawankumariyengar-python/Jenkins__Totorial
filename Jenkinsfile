@@ -1,7 +1,7 @@
 // Declarative //
 pipeline{
     agent {label 'Computer'}
-    paeameters{
+    parameters{
             string(defaultValue: "Lankapati__Ravan", description: 'Please enter your Deployment Name', name: 'deploymentName')
         }
     stages{
