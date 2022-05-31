@@ -6,24 +6,19 @@ pipeline{
 		}
 	stages{
 
-		stage('First'){
-				steps{
-					echo 'First First First'
+		stage('Check__Decision'){
+				script{
+					if (params.Please_check_the_box_for_True_or_leave_blank_for_False == true){
+						echo "All is good. All is True. Happy... Joy"
+						}
+					else{
+						echo"All are lies. All is false. Sad ... Depressed"
+						}
 					}
 		}
-		stage('Second'){
-				steps{
-					echo 'Second Second Second'
-					}
-		}
-		stage('Third'){
+		stage('Completed__Celebration'){
 			steps{
-				sh "pwd"
-				}
-		}
-		stage('Chamatkar'){
-			steps{
-				echo "The parameter we decided upon is as: ${params.Please_check_the_box_for_True_or_leave_blank_for_False}"
+				echo "Success...  Yaay ... Happy ... Congratulations"
 				}
 		}
 	}
