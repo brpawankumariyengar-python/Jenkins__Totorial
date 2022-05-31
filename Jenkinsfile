@@ -14,16 +14,16 @@ pipeline{
         }
         stage('Completeion__Celebration'){
             steps{
-                echo "Yaaaay ...Done Done Done... Ho gaya"
+                echo "Yaaaay ...Done Done Done ... Congratulations  ... Ho gaya"
                 }
         }
     }
 }
 
-def Pawan__Function(String Tota){
- def Ctr = 0
- while(Ctr < 20){
-    echo "Ho Gaya na ${Ctr} and the string value is  :${Tota}"
+def Pawan__Function(String Input__Value){
+ def Ctr = 1
+ while(Ctr < 21){
+    echo "Ho Gaya na ${Ctr} and the string value is  :${Input__Value}"
     Ctr = Ctr + 1
  }
 }
