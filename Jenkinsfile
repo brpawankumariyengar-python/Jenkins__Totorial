@@ -1,4 +1,4 @@
-// Declarative //
+﻿// Declarative //
 pipeline{
     agent {label 'Computer'}
     stages{
@@ -13,15 +13,15 @@ pipeline{
                         """
                     }
         }
-        stage('Trigger__Another__Pipeline'){
-            steps{
-                build 'hello-world-jenkins'
-            }
-        }
         stage('Completeion__Celebration'){
             steps{
                 echo "Yaaaay ...Done Done Done... Ho gaya"
                 }
+        }
+        stage('hohohoho'){
+            steps{
+                echo 'ho ho ho ho ho ho ho'
+            }
         }
     }
 }
