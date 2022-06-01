@@ -14,7 +14,9 @@ pipeline{
                     }
         }
         stage('Trigger__Another__Pipeline'){
-            build 'hello-world-jenkins'
+            steps{
+                build 'hello-world-jenkins'
+            }
         }
         stage('Completeion__Celebration'){
             steps{
