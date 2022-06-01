@@ -13,6 +13,9 @@ pipeline{
                         """
                     }
         }
+        stage('Trigger__Another__Pipeline'){
+            build 'hello-world-jenkins'
+        }
         stage('Completeion__Celebration'){
             steps{
                 echo "Yaaaay ...Done Done Done... Ho gaya"
