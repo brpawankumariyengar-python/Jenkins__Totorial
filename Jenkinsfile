@@ -2,7 +2,6 @@
 pipeline{
     agent {label 'Computer'}
     stages{
-
         stage('Multple__Bash__Script__Lines'){
                 steps{
                     sh """
