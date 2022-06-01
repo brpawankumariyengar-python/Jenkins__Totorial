@@ -1,25 +1,27 @@
-pipeline {
-    agent any
-    stages {
-        stage("Barfi"){
-            steps {
-                writeFile(file: "filename.txt", text: "Hule Hulare Hule Hule Hule")
+﻿// Declarative //
+pipeline{
+    agent {label 'Computer'}
+    stages{
+
+        stage('Multple__Bash__Script__Lines'){
+                steps{
+                    sh """
+                        pwd
+                        whoami
+                        ls -a
+                        printenv
+                        """
+                    }
+        }
+        stage('Completeion__Celebration'){
+            steps{
+                echo "Yaaaay ...Done Done Done... Ho gaya"
+                }
+        }
+        stage('hohohoho'){
+            steps{
+                echo 'ho ho ho ho ho ho ho'
             }
         }
-        stage("Jalebi"){
-            steps {
-                sh "mkdir momomomo"
-            }
-        }
-        stage("Pakoda"){
-            steps {
-                    echo "Hona tha  .... Ho Gaya"
-                   }
-            }
-        stage("Khalaas"){
-            steps {
-                    sh "pwd"
-                   }
-            }
     }
 }
